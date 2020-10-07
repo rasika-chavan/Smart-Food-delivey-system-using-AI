@@ -1,1 +1,1 @@
-# Smart-Food-delivey-system-using-AI
+# Smart-Food-delivery-system-using-AI
