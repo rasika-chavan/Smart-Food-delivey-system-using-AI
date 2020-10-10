@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once "pdo.php";
-require_once "layout.php";
+// require_once "layout.php";
 
 if (isset($_POST['cancel'])) 
 {
@@ -65,7 +65,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
             <div class="card card-2">
                 <div class="card-heading"></div>
                 <div class="card-body">
-                    <h2 class="title">Log-in</h2>
+                <h2><img src="mylogo.png" height="50px" width="250px" float: left;></h2>
+                    <!-- <h2 class="title">Log-in</h2> -->
                     <?php
                         if ( isset($_SESSION['error']) ) 
                         {
@@ -74,11 +75,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
                     ?>
                     <form method="POST" action="login.php">
                         <div class="row row-space">
-                            <div class="col-2">
+                            <!-- <div class="col-2"> -->
                                 <div class="input-group">
                                     <input class="input--style-2"  type="text" name="email" placeholder="Email address" required>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
                                 <div class="input-group">
                                     <input class="input--style-2" type="password" name="pass" placeholder="Password" required>
@@ -90,16 +91,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 						 </div> -->
                         
                          <div class="form-row-last">
-						    <!-- <button class="btn btn--radius btn--green"  type="submit" value="Log In">Login</button>
-						    <button class="btn btn--radius btn--green"  type="submit" name="cancel" value="Cancel">Cancel</button> -->
-                            <input type="submit" value="Log In">
-                            <input type="submit" name="cancel" value="Cancel">
+						    <button class="btn btn--radius btn--green"  type="submit" value="Log In">Login</button>
+						    <button class="btn btn--radius btn--green"  type="submit" name="cancel" value="Cancel">Cancel</button>
+                            <!-- <input type="submit" value="Log In">
+                            <input type="submit" name="cancel" value="Cancel"> -->
                         </div>
 						<br>
                         <div class="forgot">
 							<span class="forgot"><a href="forgotpassword.php?step1=1">Forgot password ?</a></span>
                             <span class="forgot"><a href="add.php">New, Create account.</a></span><br>
-							<br>  
+							<!-- <br>   -->
                         </div>
                     </form>
                 </div>

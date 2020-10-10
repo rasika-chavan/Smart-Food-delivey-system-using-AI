@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once "pdo.php";
-require_once "layout.php";
+// require_once "layout.php";
 if(isset($_POST['cancel'])) // user submits CANCEL button
 {
     header('Location: index.php');
@@ -87,7 +87,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 		<div class="form-v10-content">
 			<form class="form-detail" method="post" enctype="multipart/form-data">
 				<div class="form-right">
-                    <h2>SIGN UP</h2>
+                    <h2><img src="mylogo.png" height="50px" width="250px" float: left;></h2>
                     <?php
                         if (isset($_SESSION['error'])) 
                         {
